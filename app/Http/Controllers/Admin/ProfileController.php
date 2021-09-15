@@ -42,7 +42,7 @@ class ProfileController extends Controller
         
     }
 
-    public function edit()
+    public function edit(Request $request)
     {
       
       $profile = Profile::find($request->id);
