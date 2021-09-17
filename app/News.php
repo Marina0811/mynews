@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class News extends Model
+class Profile extends Model
 {
     protected $guarded = array('id');
 
@@ -16,9 +16,9 @@ class News extends Model
     
     // 以下を追記
     // News Modelに関連付けを行う
-    public function histories()
+    public function historiesprofiles()
     {
-        return $this->hasMany('App\History');
+        return $this->hasMany('App\HistoryProfile');
 
     }
 }
