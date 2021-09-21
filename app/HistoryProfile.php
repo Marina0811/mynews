@@ -6,10 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class HistoryProfile extends Model
 {
-    protected $guarded = array('id');
+     protected $guarded = array('id');
 
     public static $rules = array(
-        'profile_id' => 'required',
-        'edited_at' => 'required',
+       'name' => 'required',
+        'gender' => 'required',
+        'hobby' => 'required',
+        'introduction' => 'required',
     );
+       public function histories()
+    {
+      return $this->hasMany('App\HistoryProfile');
+
+    }
 }
