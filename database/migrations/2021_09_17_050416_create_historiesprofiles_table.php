@@ -16,6 +16,7 @@ class CreateHistoriesprofilesTable extends Migration
         Schema::create('history_profiles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('profile_id');
+            $table->string('edited_at');
             $table->timestamps();
         });
     }
