@@ -53,9 +53,13 @@
                             <input type="text" class="form-control" name="introduction" value="{{ old('introduction') }}">
                         </div>
                     </div>
-                    
-                    {{ csrf_field() }}
-                    <input type="submit" class="btn btn-primary" value="更新">
+                    <div class="form-group row">
+                        <div class="col-md-10">
+                            <input type="hidden" name="id" value="{{ $profile_form->id }}">
+                            {{ csrf_field() }}
+                            <input type="submit" class="btn btn-primary" value="更新">
+                         </div>
+                    </div>
                 </form>
                 <div class="row mt-5">
                     <div class="col-md-4 mx-auto">
