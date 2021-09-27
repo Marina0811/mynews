@@ -30,9 +30,8 @@
         
         <div class="form-group row">
           <label for="radio01" class="col-md-2">性別</label>
-              <div class="col-md-2">
-              </div>
-            </div>
+              <div class="col-md-10">
+              
                 <div class="form-check form-check-inline"> 
                   <input class="form-check-input" type="radio" id="inlineRadio01" name="gender" value="1"> 
                   <label class="form-check-label" for="inlineRadio01">男性</label>
@@ -41,6 +40,8 @@
                   <input class="form-check-input" type="radio" id="inlineRadio02" name="gender" value="2" checked="checked">
                   <label class="form-check-label" for="inlineRadio02">女性</label> 
                 </div>
+              </div>  
+        </div>
                 
         <div class="form-group row">
            <label class="col-md-2">趣味</label>
