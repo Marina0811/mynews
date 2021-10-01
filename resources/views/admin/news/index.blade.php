@@ -2,6 +2,7 @@
 @section('title', '登録済みニュースの一覧')
 
 @section('content')
+<p>課題用テスト</p>
     <div class="container">
         <div class="row">
             <h2>ニュース一覧</h2>

@@ -2,19 +2,6 @@
 
 @section('content')
     <div class="container">
-        <hr color="#c0c0c0">
-        @if (!is_null($headline))
-            <div class="post">
-                <div class="headline col-md-8 mx-auto mt-3">
-                    <div class="post">
-                        <div class="col-md-6">
-                            <p class="body mx-auto">{{ str_limit($headline->body, 650) }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endif
-        <hr color="#c0c0c0">
         <div class="row">
             <div class="posts col-md-8 mx-auto mt-3">
                 @foreach($posts as $post)
